@@ -85,7 +85,8 @@ class ToDo extends Cubit<TodoState> {
     doneTasks = [];
     archiveTasks = [];
     emit(GetLoadingState());
-      database.rawQuery('SELECT * FROM tasks').then((value) {
+      database.rawQuery('SELECT * FROM tasks')
+          .then((value) {
         value.forEach((element) {
           if(element['status'] == 'new'){
             newTasks.add(element);
