@@ -7,6 +7,7 @@ import 'package:todo/shared/components/components.dart';
 
 class DoneTasks extends StatelessWidget {
 
+
   @override
   Widget build(BuildContext context) {
     return BlocConsumer<ToDo,TodoState>(

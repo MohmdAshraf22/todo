@@ -86,6 +86,8 @@ Widget defaultTextButton({
         fontSize: fontSize
       ),));
 
+
+
 Widget buildTaskItem(Map model, context) => Dismissible(
   key: Key(model['title']),
   child: Padding(
